@@ -11,7 +11,7 @@ VMTOOL=$(whereis vmtoolsd |cut -d: -f2 | sed 's/^[ \t]*//')
 
 installVMTools () {
     cd /tmp
-    wget -c http://10.25.5.80/repos/vmwaretools/VMwareTools-10.3.25-20206839.tar.gz
+    wget -c http://<DOWNLOADPATH>/VMwareTools-10.3.25-20206839.tar.gz
     tar -zxvf /tmp/VMwareTools-10.3.25-20206839.tar.gz
     cd /tmp/vmware-tools-distrib/
     ./vmware-install.pl -d default
